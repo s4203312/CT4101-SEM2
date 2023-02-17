@@ -221,7 +221,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   star: {fileID: 8068913760299449713, guid: 0c6532b0a16aca040b0fba887c9aa38e, type: 3}
-  planet: {fileID: 7937019688888924541, guid: 653729481f1838945be734fc8b0e4555, type: 3}
+  currentStar: {fileID: 0}
+  array: []
+  starNames:
+  - dingus
+  - bert
 --- !u!1 &2091085266
 GameObject:
   m_ObjectHideFlags: 0
