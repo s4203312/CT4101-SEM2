@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +123,77 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &243172544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 243172546}
+  - component: {fileID: 243172545}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &243172545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243172544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 211312dff876c224bb2a4fe19f6cb7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  star: {fileID: 8068913760299449713, guid: 0c6532b0a16aca040b0fba887c9aa38e, type: 3}
+  starArray: []
+  starNames:
+  - Sun
+  - Pollux
+  - Orion
+  - Sirius
+  - Altair
+  - Antares
+  planet: {fileID: 7937019688888924541, guid: 653729481f1838945be734fc8b0e4555, type: 3}
+  planetArray: []
+  planetNames:
+  - Mercury
+  - Venus
+  - Earth
+  - Mars
+  - Jupiter
+  - Saturn
+  - Uranus
+  - Neptune
+  orbitSpeed: 20
+  rotationDirection: []
+  mat:
+  - {fileID: 2100000, guid: 9e7f1447a92bfed45b1840411eea08ed, type: 2}
+  - {fileID: 2100000, guid: 4af65a3d029d11444a36c97f7220d0c0, type: 2}
+  - {fileID: 2100000, guid: fc292cdadffbbc043b4dd8dd33f12b12, type: 2}
+  - {fileID: 2100000, guid: 6a27351c123e553478a70a6935c23529, type: 2}
+--- !u!4 &243172546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243172544}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1834260429
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,7 +205,6 @@ GameObject:
   - component: {fileID: 1834260432}
   - component: {fileID: 1834260431}
   - component: {fileID: 1834260430}
-  - component: {fileID: 1834260433}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -208,24 +278,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1834260433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1834260429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 211312dff876c224bb2a4fe19f6cb7c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  star: {fileID: 8068913760299449713, guid: 0c6532b0a16aca040b0fba887c9aa38e, type: 3}
-  currentStar: {fileID: 0}
-  array: []
-  starNames:
-  - dingus
-  - bert
 --- !u!1 &2091085266
 GameObject:
   m_ObjectHideFlags: 0
