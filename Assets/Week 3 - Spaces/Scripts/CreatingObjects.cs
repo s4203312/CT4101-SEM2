@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
 
 public class CreatingObjects : MonoBehaviour
 {
@@ -55,7 +54,7 @@ public class CreatingObjects : MonoBehaviour
                 var positionPlanet = new Vector3(Random.Range(-100.0f, 100.0f), Random.Range(-100.0f, 100.0f), Random.Range(-100.0f, 100.0f));
                 planetArray[planetCounter] = Instantiate(planet, positionPlanet + positionStar, Quaternion.identity, starArray[i].transform);
                 planetArray[planetCounter].transform.tag = "Planet";
-                planetArray[planetCounter].transform.name = planetNames[Random.Range(0, planetNames.Length)] + " " + planetCounter;
+                planetArray[planetCounter].transform.name = planetNames[Random.Range(0, planetNames.Length)];
                 planetCounter += 1;
                 rotationDirection.Add(rotations[Random.Range(0, rotations.Length)]);
             }
