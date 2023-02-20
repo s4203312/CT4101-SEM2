@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -94,8 +94,8 @@ MonoBehaviour:
     y: 0
     width: 363
     height: 561
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -317,22 +317,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Week 3 - Spaces/Scripts
+    - Assets/Week 3 - Spaces
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Week 3 - Spaces/Scripts
+  - Assets/Week 3 - Spaces
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\alec\Desktop\Uni Work\Leactures\CT4101-SEM2
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7e580000
-    m_LastClickedID: 22654
-    m_ExpandedIDs: 00000000665800007258000000ca9a3b
+    m_SelectedIDs: 68590000
+    m_LastClickedID: 22888
+    m_ExpandedIDs: 000000006659000068590000485c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -360,7 +360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000066580000
+    m_ExpandedIDs: 000000006659000068590000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -451,7 +451,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 523
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -488,9 +488,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d2f9ffff
-      m_LastClickedID: -1582
-      m_ExpandedIDs: 50efffff92f9ffff38faffff30fbffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 30fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -591,7 +591,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-transform-toolbar
@@ -772,9 +772,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1577.2617, y: 415.9249, z: 552.2522}
+    m_Target: {x: 551.7776, y: 309.35068, z: 956.31476}
     speed: 2
-    m_Value: {x: 1577.2617, y: 415.9249, z: 552.2522}
+    m_Value: {x: -39.79212, y: 14.54332, z: -14.189834}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -820,13 +820,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.07211278, y: 0.5980549, z: -0.054167546, w: -0.7964247}
+    m_Target: {x: 0.041678376, y: -0.011081205, z: -0.00046683452, w: -0.99912226}
     speed: 2
-    m_Value: {x: -0.072109304, y: 0.5980261, z: -0.05416494, w: -0.79638636}
+    m_Value: {x: 0.14078401, y: 0.63159776, z: -0.11809926, w: 0.7532042}
   m_Size:
-    m_Target: 608.59717
+    m_Target: 752.43085
     speed: 2
-    m_Value: 608.59717
+    m_Value: 0.8660254
   m_Ortho:
     m_Target: 0
     speed: 2

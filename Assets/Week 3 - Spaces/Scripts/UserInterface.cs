@@ -9,7 +9,7 @@ public class UserInterface : MonoBehaviour {
     
     //Screen
     [SerializeField] private CanvasGroup panel;
-    private TextMeshProUGUI planetDetails;
+    private TextMeshProUGUI Details;
     public Camera cam;
 
     //Description
@@ -18,7 +18,7 @@ public class UserInterface : MonoBehaviour {
 
     private void Start() {
         if (panel != null) {
-            planetDetails = panel.gameObject.GetComponentInChildren<TextMeshProUGUI>();        //Finding the textbox
+            Details = panel.gameObject.GetComponentInChildren<TextMeshProUGUI>();        //Finding the textbox
         }
     }
 
@@ -30,29 +30,85 @@ public class UserInterface : MonoBehaviour {
         if (Physics.Raycast(ray, out hit)) {
             if (hit.transform.CompareTag("Planet")) {                           //Only interacting with planets
                 PlanetDetails(hit.transform.name);
-                planetDetails.text = "Planet Name: " + objName + "\nDescription:" + description;
+                Details.text = "Planet Name: " + objName + "\nDescription:" + description;
             }
             else if (hit.transform.CompareTag("Star")) {                           //Only interacting with stars
-                planetDetails.text = "Star Name: " + hit.transform.name;
+                StarDetails(hit.transform.name);
+                Details.text = "Star Name: " + objName + "\nDescription:" + description;
             }
         }
         else {
-            planetDetails.text = "";
+            Details.text = "";
         }
     }
     //Details of planets
     private void PlanetDetails(string planet) {
         switch (planet) {
+            case "Mercury":
+                objName = "Mercury";
+                description = "Mercury is a rocky planet, also known as a terrestrial planet. Mercury has a solid, cratered surface, much like the Earth's moon.";
+                break;
+            case "Venus":
+                objName = "Venus";
+                description = "Venus is a little smaller than Earth, and is similar to Earth inside.";
+                break;
             case "Earth":
                 objName = "Earth";
-                description = "Place where humans live";
+                description = "Earth is a rocky planet with a solid and dynamic surface of mountains, canyons, plains and more. Most of our planet is covered in water.";
                 break;
             case "Mars":
                 objName = "Mars";
-                description = "Place where aliens live";
+                description = "Mars is a dusty, cold, desert world with a very thin atmosphere. Mars is also a dynamic planet with seasons, polar ice caps, canyons, extinct volcanoes.";
                 break;
-
-            //Add more cases for all planets and more details on planets
+            case "Jupiter":
+                objName = "Jupiter";
+                description = "Jupiter's familiar stripes and swirls are actually cold, windy clouds of ammonia and water, floating in an atmosphere of hydrogen and helium.";
+                break;
+            case "Saturn":
+                objName = "Saturn";
+                description = "Saturn is a massive ball made mostly of hydrogen and helium. Saturn is not the only planet to have rings, but none are as spectacular or as complex as Saturn's.";
+                break;
+            case "Uranus":
+                objName = "Uranus";
+                description = "Uranus's mass is made up of a hot dense fluid of icy materials (water, methane, and ammonia) above a small rocky core.";
+                break;
+            case "Neptune":
+                objName = "Neptune";
+                description = "Neptune is made of a thick soup of water, ammonia, and methane flowing over a solid core about the size of Earth. Neptune has a thick, windy atmosphere.";
+                break;
+            default:
+                objName = "";
+                description = "";
+                break;
+        }
+    }
+    //Details of stars
+    private void StarDetails(string star) {
+        switch (star) {
+            case "Sun":
+                objName = "Sun";
+                description = "";
+                break;
+            case "Pollux":
+                objName = "Pollux";
+                description = "";
+                break;
+            case "Orion":
+                objName = "Orion";
+                description = "";
+                break;
+            case "Sirius":
+                objName = "Sirius";
+                description = "";
+                break;
+            case "Altair":
+                objName = "Altair";
+                description = "";
+                break;
+            case "Antares":
+                objName = "Antares";
+                description = "";
+                break;
             default:
                 objName = "";
                 description = "";
